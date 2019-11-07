@@ -1,8 +1,5 @@
 package hsm.serverHandler;
 
-import io.netty.buffer.Unpooled;
-import io.netty.channel.ChannelFutureListener;
-import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.codec.http.*;
@@ -12,17 +9,7 @@ import io.netty.handler.codec.http.multipart.HttpPostRequestDecoder;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-
 import java.util.*;
-
-import static io.netty.handler.codec.http.HttpHeaderNames.CONNECTION;
-import static io.netty.handler.codec.http.HttpHeaderNames.CONTENT_TYPE;
-import static io.netty.handler.codec.http.HttpResponseStatus.CONTINUE;
-import static io.netty.handler.codec.http.HttpResponseStatus.OK;
-import static io.netty.handler.codec.http.HttpUtil.is100ContinueExpected;
-import static io.netty.handler.codec.http.HttpUtil.isKeepAlive;
-import static io.netty.handler.codec.http.HttpVersion.HTTP_1_1;
-import static io.netty.handler.codec.rtsp.RtspHeaderNames.CONTENT_LENGTH;
 
 public class HttpServerHandler extends SimpleChannelInboundHandler<HttpObject> {
     private Logger log= LogManager.getLogger(HttpServerHandler.class);
@@ -124,8 +111,7 @@ public class HttpServerHandler extends SimpleChannelInboundHandler<HttpObject> {
 
             if (chunk instanceof LastHttpContent) {
                 log.trace("OK");
-                // 应答
-                // 应答完成后
+
 //					DefaultHttpResponse response = new DefaultHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.OK);
 //					response.headers().set(HttpHeaders.Names.TRANSFER_ENCODING, HttpHeaders.Values.CHUNKED);
 //					ctx.write(response);
@@ -155,7 +141,7 @@ public class HttpServerHandler extends SimpleChannelInboundHandler<HttpObject> {
                 // DefaultHttpContent(Unpooled.wrappedBuffer("HELLO".getBytes(Charset.forName("utf8")))));
                 // ctx.write(LastHttpContent.EMPTY_LAST_CONTENT);
                 DefaultHttpResponse response = new DefaultHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.OK);
-        		response.headers().set(HttpHeaders.Names.CONTENT_TYPE, "application/json; charset=UTF-8");
+        	//	response.headers().set(HttpHeaders.Names.CONTENT_TYPE, "application/json; charset=UTF-8");
                 response.headers().set(HttpHeaders.Names.CONTENT_LENGTH, 0);
                 response.headers().set(HttpHeaders.Names.CONNECTION, HttpHeaders.Values.KEEP_ALIVE);
                 response.headers().set(HttpHeaders.Names.ACCESS_CONTROL_ALLOW_ORIGIN, "*");

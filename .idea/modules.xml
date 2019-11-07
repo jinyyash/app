@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/appLova.iml" filepath="$PROJECT_DIR$/appLova.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example/example.iml" filepath="$PROJECT_DIR$/example/example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/http-client/http-client.iml" filepath="$PROJECT_DIR$/http-client/http-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/http-server/http-server.iml" filepath="$PROJECT_DIR$/http-server/http-server.iml" />
     </modules>
   </component>

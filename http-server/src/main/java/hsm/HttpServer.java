@@ -13,41 +13,24 @@ import org.apache.logging.log4j.Logger;
 
 public class HttpServer
 {
-    private final int port;
-  Logger logger= LogManager.getLogger(HttpServer.class);
 
-    public HttpServer(int port) {
-        this.port = port;
-    }
-
-    public void run() throws Exception {
+     static  Logger logger= LogManager.getLogger(HttpServer.class);
+    public static void main(String[] args) throws Exception {
         EventLoopGroup bossGroup = new NioEventLoopGroup();
-        EventLoopGroup workerGroup = new NioEventLoopGroup();
-        try {
-            ServerBootstrap b = new ServerBootstrap();
-            b.option(ChannelOption.SO_BACKLOG, 1024);
-            b.group(bossGroup, workerGroup)
-                    .channel(NioServerSocketChannel.class)
-                    .childHandler(new HttpServerInitializer());
+        EventLoopGroup workGroup = new NioEventLoopGroup();
 
-            Channel ch = b.bind(port).sync().channel();
-            logger.info("Server Starting ....");
-            System.out.println("Server");
-            ch.closeFuture().sync();
+        try {
+            ServerBootstrap sb = new ServerBootstrap();
+            sb.group(bossGroup, workGroup).channel(NioServerSocketChannel.class).childHandler(new HttpServerInitializer());
+
+            Channel channel = sb.bind(8095).sync().channel();
+
+            logger.info("server started at: 8095");
+
+            channel.closeFuture().sync();
         } finally {
             bossGroup.shutdownGracefully();
-            workerGroup.shutdownGracefully();
+            workGroup.shutdownGracefully();
         }
-    }
-
-    public static void main(String[] args) throws Exception {
-        int port;
-        if (args.length > 0) {
-            port = Integer.parseInt(args[0]);
-        } else {
-            port = 8087;
-        }
-        new HttpServer(port).run();
-
     }
 }

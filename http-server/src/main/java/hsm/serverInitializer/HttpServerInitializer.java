@@ -19,7 +19,6 @@ public class HttpServerInitializer extends ChannelInitializer <SocketChannel> {
 
         channelPipeline.addLast("httpRequestDecoder", new HttpRequestDecoder());
         channelPipeline.addLast("httpResponseEncoder", new HttpResponseEncoder());
-        channelPipeline.addLast("httpServerCodec", new HttpServerCodec());
         channelPipeline.addLast("httpContentCompressor", new HttpContentCompressor());
         channelPipeline.addLast("chunkedWriteHandler", new ChunkedWriteHandler());
         channelPipeline.addLast("httpHandler", new HttpServerHandler());

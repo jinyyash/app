@@ -110,13 +110,13 @@
 
         <Logger name="hms" level="info" additivity="false">
             <!--<appender-ref ref="trace-log" level="trace"/>-->
-            <appender-ref ref="info-log" level="info"/>
+            <appender-ref ref="info-log" level="debug"/>
             <appender-ref ref="error-log" level="error"/>
             <!--<appender-ref ref="console-log" level="error"/>-->
         </Logger>
 
-        <Logger name="TRANS_LOG" level="info" additivity="false">
-            <appender-ref ref="trans-log" level="info"/>
+        <Logger name="TRANS_LOG" level="debug" additivity="false">
+            <appender-ref ref="trans-log" level="debug"/>
         </Logger>
 
         <Logger name="request_logger" level="REQUEST" additivity="false">
