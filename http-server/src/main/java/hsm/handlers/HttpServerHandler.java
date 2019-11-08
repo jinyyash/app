@@ -1,4 +1,4 @@
-package hsm.serverHandler;
+package hsm.handlers;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;

@@ -2,75 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07e8de6f-7a7e-4e57-a021-728cbff29439" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_activation_javax_activation_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_typesafe_netty_netty_reactive_streams_2_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_43_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_43_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_dns_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http2_4_1_43_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_43_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_43_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_43_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_43_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_43_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_43_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_43_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_43_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_kqueue_osx_x86_64_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_43_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_netty_reactor_netty_0_9_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_3_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_asynchttpclient_async_http_client_2_10_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_asynchttpclient_async_http_client_netty_utils_2_10_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_all_1_9_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_26.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/hsm/codec/Codec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/hsm/models/WebHookDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/example.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-client/http-client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_netty_netty_3_2_5_Final.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appLova.iml" beforeDir="false" afterPath="$PROJECT_DIR$/appLova.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/hsm/codec/Codec.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/hsm/codec/Codec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/hsm/models/Payload.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/hsm/models/Payload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/hsm/models/WebHookDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/hsm/models/WebHookDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/test/java/hsm/CodecTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/test/java/hsm/CodecTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/hsm/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/hsm/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/hsm/codec/Codec.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/hsm/codec/Codec.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/hsm/models/Payload.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/hsm/models/Payload.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/hsm/models/WebHookDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/hsm/models/WebHookDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/test-classes/hsm/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/test-classes/hsm/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/test-classes/hsm/CodecTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/test-classes/hsm/CodecTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/http-server/http-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/http-server/http-server.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/http-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/http-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http-server/src/main/java/hsm/HttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/http-server/src/main/java/hsm/HttpServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http-server/src/main/java/hsm/serverHandler/HttpServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/http-server/src/main/java/hsm/serverHandler/HttpServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http-server/src/main/java/hsm/serverHandler/HttpServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/http-server/src/main/java/hsm/handlers/HttpServerHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/http-server/src/main/java/hsm/serverInitializer/HttpServerInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/http-server/src/main/java/hsm/serverInitializer/HttpServerInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http-server/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/http-server/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http-server/target/appassembler/bin/app" beforeDir="false" afterPath="$PROJECT_DIR$/http-server/target/appassembler/bin/app" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http-server/target/appassembler/lib/hsm/http-server/1.0/http-server-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/http-server/target/appassembler/lib/hsm/http-server/1.0/http-server-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http-server/target/archive-tmp/http-server-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/http-server/target/archive-tmp/http-server-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http-server/target/classes/hsm/HttpServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/http-server/target/classes/hsm/HttpServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http-server/target/classes/hsm/serverHandler/HttpServerHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/http-server/target/classes/hsm/serverHandler/HttpServerHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http-server/target/classes/hsm/serverInitializer/HttpServerInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/http-server/target/classes/hsm/serverInitializer/HttpServerInitializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http-server/target/classes/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/http-server/target/classes/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http-server/target/generated-resources/appassembler/jsw/http-server/conf/wrapper.conf" beforeDir="false" afterPath="$PROJECT_DIR$/http-server/target/generated-resources/appassembler/jsw/http-server/conf/wrapper.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http-server/target/generated-resources/appassembler/jsw/http-server/lib/http-server-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/http-server/target/generated-resources/appassembler/jsw/http-server/lib/http-server-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http-server/target/http-server-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/http-server/target/http-server-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http-server/target/http-server-1.0.tar.gz" beforeDir="false" afterPath="$PROJECT_DIR$/http-server/target/http-server-1.0.tar.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http-server/target/surefire-reports/TEST-hsm.HttpServerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/http-server/target/surefire-reports/TEST-hsm.HttpServerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http-server/target/surefire-reports/hsm.HttpServerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/http-server/target/surefire-reports/hsm.HttpServerTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hsm/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/http-server/src/test/java/hsm/HttpServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/http-server/src/test/java/hsm/HttpServerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http-server/target/classes/hsm/serverInitializer/HttpServerInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/http-server/target/test-classes/hsm/HttpServerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/http-server/target/test-classes/hsm/HttpServerTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -138,7 +91,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CodecTest">
+  <component name="RunManager" selected="JUnit.HttpServerTest">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hsm.Client" />
       <module name="http-client" />
@@ -158,19 +111,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="hsm.codec.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Example" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hsm.Example" />
-      <module name="example" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hsm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -206,13 +146,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HttpServerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="http-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hsm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hsm" />
+      <option name="MAIN_CLASS_NAME" value="hsm.HttpServerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HttpServerTest" />
         <item itemvalue="JUnit.CodecTest" />
         <item itemvalue="Application.Codec" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.HttpServer" />
-        <item itemvalue="Application.Example" />
       </list>
     </recent_temporary>
   </component>
@@ -246,7 +201,7 @@
       <workItem from="1573015689479" duration="6835000" />
       <workItem from="1573027306457" duration="5216000" />
       <workItem from="1573040843343" duration="24914000" />
-      <workItem from="1573126647949" duration="182000" />
+      <workItem from="1573126647949" duration="14898000" />
     </task>
     <servers />
   </component>

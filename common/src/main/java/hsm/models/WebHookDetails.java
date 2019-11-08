@@ -37,4 +37,19 @@ public class WebHookDetails {
     public String getTs() {
         return ts;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == this) {
+            return true;
+        }
+        if (!(o instanceof WebHookDetails)) {
+            return false;
+        }
+        WebHookDetails webHookDetails = (WebHookDetails) o;
+        return objectId.equals(webHookDetails.objectId) && type.equals(webHookDetails.type) && ts.equals(webHookDetails.ts);
+    }
 }
+
+
+

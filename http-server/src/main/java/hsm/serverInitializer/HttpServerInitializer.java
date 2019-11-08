@@ -1,26 +1,24 @@
 package hsm.serverInitializer;
 
-import hsm.serverHandler.HttpServerHandler;
-import io.netty.channel.ChannelInitializer;
-import io.netty.channel.ChannelPipeline;
-import io.netty.channel.socket.SocketChannel;
-import io.netty.handler.codec.http.HttpContentCompressor;
-import io.netty.handler.codec.http.HttpRequestDecoder;
-import io.netty.handler.codec.http.HttpResponseEncoder;
-import io.netty.handler.codec.http.HttpServerCodec;
-import io.netty.handler.stream.ChunkedWriteHandler;
+import hsm.handlers.RequestHandler;
+import org.jboss.netty.channel.ChannelPipeline;
+import org.jboss.netty.channel.ChannelPipelineFactory;
+import org.jboss.netty.channel.Channels;
+import org.jboss.netty.handler.codec.http.HttpChunkAggregator;
+import org.jboss.netty.handler.codec.http.HttpRequestDecoder;
+import org.jboss.netty.handler.codec.http.HttpResponseEncoder;
 
 
-public class HttpServerInitializer extends ChannelInitializer <SocketChannel> {
-
+public class HttpServerInitializer implements ChannelPipelineFactory {
     @Override
-    protected void initChannel(SocketChannel socketChannel) throws Exception {
-        ChannelPipeline channelPipeline=socketChannel.pipeline();
+    public org.jboss.netty.channel.ChannelPipeline getPipeline() throws Exception {
+        ChannelPipeline pipeline = Channels.pipeline();
 
-        channelPipeline.addLast("httpRequestDecoder", new HttpRequestDecoder());
-        channelPipeline.addLast("httpResponseEncoder", new HttpResponseEncoder());
-        channelPipeline.addLast("httpContentCompressor", new HttpContentCompressor());
-        channelPipeline.addLast("chunkedWriteHandler", new ChunkedWriteHandler());
-        channelPipeline.addLast("httpHandler", new HttpServerHandler());
+        pipeline.addLast("decoder", new HttpRequestDecoder());
+        pipeline.addLast("aggregator", new HttpChunkAggregator(1048576));
+        pipeline.addLast("encoder", new HttpResponseEncoder());
+        pipeline.addLast("handler", new RequestHandler());
+
+        return pipeline;
     }
 }
