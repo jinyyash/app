@@ -1,5 +1,6 @@
 package hsm;
 
+import com.google.gson.JsonObject;
 import hsm.Initializer.ClientInitializer;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;
@@ -16,7 +17,7 @@ import java.net.URI;
 public class Client {
     static final String URL = System.getProperty("url", "http://127.0.0.1:8080/");
 
-    public static void main(String[] args) throws Exception {
+    public static void connection(JsonObject jsonObject) throws Exception {
 
         URI uri = new URI(URL);
         String scheme = uri.getScheme() == null? "http" : uri.getScheme();
@@ -63,12 +64,6 @@ public class Client {
             request.headers().set(HttpHeaders.Names.CONNECTION, HttpHeaders.Values.CLOSE);
             request.headers().set(HttpHeaders.Names.ACCEPT_ENCODING, HttpHeaders.Values.GZIP);
 
-            // Set some example cookies.
-            request.headers().set(
-                    HttpHeaders.Names.COOKIE,
-                    ClientCookieEncoder.encode(
-                            new DefaultCookie("my-cookie", "foo"),
-                            new DefaultCookie("another-cookie", "bar")));
 
             // Send the HTTP request.
             ch.writeAndFlush(request);

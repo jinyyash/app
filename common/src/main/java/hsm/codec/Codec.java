@@ -25,10 +25,10 @@ public class Codec {
         String jsonStr = ow.writeValueAsString(webHookDetails);
         return new JsonParser().parse(jsonStr).getAsJsonObject();
     }
-    public static JsonObject convertPayLoadToJsonObj(Payload payload) throws JsonProcessingException {
+    public static String convertPayLoadToJsonStr(Payload payload) throws JsonProcessingException {
         ObjectWriter ow = new ObjectMapper().writer().withDefaultPrettyPrinter();
         String jsonStr = ow.writeValueAsString(payload);
-        return new JsonParser().parse(jsonStr).getAsJsonObject();
+        return gson.toJson(payload);
     }
 
     public static JsonObject convertStringToJsonObject(String jsonString) {

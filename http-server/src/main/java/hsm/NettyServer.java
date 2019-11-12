@@ -10,6 +10,7 @@ import io.netty.handler.logging.LoggingHandler;
 import io.netty.handler.ssl.SslContext;
 import io.netty.handler.ssl.SslContextBuilder;
 import io.netty.handler.ssl.util.SelfSignedCertificate;
+import org.springframework.beans.factory.annotation.Value;
 
 public class NettyServer {
     static final boolean SSL = System.getProperty("ssl") != null;

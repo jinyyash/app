@@ -4,6 +4,7 @@ import hsm.codec.Codec;
 import hsm.models.MerchantWebhook;
 import hsm.models.Payload;
 import hsm.models.WebHookDetails;
+import hsm.router.Router;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -44,6 +45,7 @@ public class WebRequest {
                 System.out.println(webHookDetails.getWebHookDetails().getObjectId() + "    :" + webHookDetails.getEventType() + "   : "
                         +webHookDetails.getMerchantId()+ "  : "+webHookDetails.getWebHookDetails().getType() + "   app :" +webHookDetails.getAppId());
         }
+        Router.getClientConnection(webHookMap,"O");
 
         }
 

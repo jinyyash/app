@@ -16,19 +16,19 @@ public class test {
                 "                \"ts\":1537970958000\n" +
                 "            },\n" +
                 "            {\n" +
-                "                \"objectId\":\"O:ABCVJTABCRRSC\",\n" +
+                "                \"objectId\":\"I:ABCVJTABCRRSC\",\n" +
                 "                \"type\":\"UPDATE\",\n" +
                 "                \"ts\":1536156558000\n" +
                 "            }\n" +
                 "        ],\n" +
                 "        \"MNOVJT2ZRRRSC\":[\n" +
                 "         {\n" +
-                "                \"objectId\":\"O:GHIVJT2ABCRSCD\",\n" +
+                "                \"objectId\":\"I:GHIVJT2ABCRSCD\",\n" +
                 "                \"type\":\"CREATE\",\n" +
                 "                \"ts\":15379709580001\n" +
                 "            },\n" +
                 "            {\n" +
-                "                \"objectId\":\"O:ABCVJTABCRRSCD\",\n" +
+                "                \"objectId\":\"I:ABCVJTABCRRSCD\",\n" +
                 "                \"type\":\"UPDATE\",\n" +
                 "                \"ts\":15361565580001\n" +
                 "            }\n" +
