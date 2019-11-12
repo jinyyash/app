@@ -8,6 +8,7 @@ import io.netty.handler.codec.http.HttpClientCodec;
 import io.netty.handler.codec.http.HttpContentDecompressor;
 import io.netty.handler.ssl.SslContext;
 
+
 public class ClientInitializer extends ChannelInitializer<SocketChannel> {
     private final SslContext sslCtx;
 

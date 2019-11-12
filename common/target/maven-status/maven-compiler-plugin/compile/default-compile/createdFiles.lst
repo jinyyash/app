@@ -1,3 +1,5 @@
-hsm/models/WebHookDetails.class
 hsm/App.class
+hsm/models/WebHookDetails.class
+hsm/models/Payload.class
+hsm/models/MerchantWebhook.class
 hsm/codec/Codec.class

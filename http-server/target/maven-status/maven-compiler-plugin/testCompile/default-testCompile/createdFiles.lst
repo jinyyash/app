@@ -1,1 +1,6 @@
 hsm/HttpServerTest.class
+hsm/HttpServerTest$TestRequestHandler.class
+hsm/HttpServerTest$ClientPipelineFactory.class
+hsm/HttpServerTest$1.class
+hsm/HttpServerTest$ServerPipelineFactory.class
+hsm/HttpServerTest$TestResponseHandler.class

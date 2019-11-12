@@ -1,5 +1,7 @@
-hsm/serverHandler/HttpServerHandler.class
+hsm/webrequest/WebRequest.class
 hsm/models/TestModel.class
-hsm/serverInitializer/HttpServerInitializer.class
+hsm/handlers/HttpServerHandler.class
 hsm/controllers/HomeController.class
+hsm/serverInitializer/HttpServerInitializer.class
+hsm/handlers/RequestHandler.class
 hsm/HttpServer.class

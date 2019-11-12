@@ -6,26 +6,26 @@ import io.netty.handler.codec.http.*;
 import io.netty.util.CharsetUtil;
 
 
-public class ClientHandler extends SimpleChannelInboundHandler<HttpObject>{
-
-    public void  channelRead0(ChannelHandlerContext ctx, HttpObject msg) {
+public class ClientHandler extends SimpleChannelInboundHandler<HttpObject> {
+    @Override
+    public void channelRead0(ChannelHandlerContext ctx, HttpObject msg) {
         if (msg instanceof HttpResponse) {
             HttpResponse response = (HttpResponse) msg;
 
-            System.err.println("STATUS: " + response.status());
-            System.err.println("VERSION: " + response.protocolVersion());
+            System.err.println("STATUS: " + response.getStatus());
+            System.err.println("VERSION: " + response.getProtocolVersion());
             System.err.println();
 
             if (!response.headers().isEmpty()) {
-                for (CharSequence name: response.headers().names()) {
-                    for (CharSequence value: response.headers().getAll(name)) {
+                for (String name: response.headers().names()) {
+                    for (String value: response.headers().getAll(name)) {
                         System.err.println("HEADER: " + name + " = " + value);
                     }
                 }
                 System.err.println();
             }
 
-            if (HttpUtil.isTransferEncodingChunked(response)) {
+            if (HttpHeaders.isTransferEncodingChunked(response)) {
                 System.err.println("CHUNKED CONTENT {");
             } else {
                 System.err.println("CONTENT {");
@@ -49,5 +49,4 @@ public class ClientHandler extends SimpleChannelInboundHandler<HttpObject>{
         cause.printStackTrace();
         ctx.close();
     }
-
 }
